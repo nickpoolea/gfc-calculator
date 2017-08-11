@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Calculate something again</title>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="/site.css">
 	</head>
 	<body>
-
-		<b>Result: {{ result }}</b>
+		<h1>Calculate something again</h1>
+		<b>Result: {{#result}}
+								    {{.}}
+							 {{/result}}</b>
 		{{> calculate-form }}
 
 	</body>

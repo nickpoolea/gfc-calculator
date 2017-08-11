@@ -11,13 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/")
 public class calculatorController {
 	
-	public int intOne;
-	public int intTwo;
-	
-	public calculatorController() {
-		
-	}
-	
 	@GetMapping("")
 	public String index() {
 		return "/index";
@@ -50,7 +43,11 @@ public class calculatorController {
 		
 		mv.addObject("result", result);
 		return mv;
-		
+	}
+	
+	@GetMapping("calc")
+	public String get() {
+		return "/results";
 	}
 
 }
