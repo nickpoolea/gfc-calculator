@@ -1,57 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,700');
 
 html, body, input, select, textarea, button {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-html, body {
-  font-size: 14px;
-}
-
-input, button {
+html, body, input, button{
   font-size: 16px;
+}
+
+.inputs, .buttons {
+	display: block; 
+	padding: 10px;
 }
 
 input[type="text"],
 input[type="number"] {
-  border: 0;
-  border-left: 4px solid transparent;
-  border-bottom: 2px solid #ECECEC;
-  outline: 0;
-  padding: 4px 0;
-}
-
-input[type="text"]:invalid,
-input[type="number"]:invalid {
-  border-left-color: #c5162c;
-  outline: 0;
-  box-shadow: none;
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
 }
 
 input[type="text"]:focus,
 input[type="number"]:focus {
-  border-bottom-color: #FF5555;
-}
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;}
 
 button {
-  border-radius: 0;
+  border-radius: 10px;
   padding: 4px 8px;
   border: 2px solid transparent;
-  background-color: #FF5555;
+  background-color: #AC58FA;
   color: white;
   outline: 0;
 }
 
 button:focus,
 button:hover {
-  border-color: #FF5555;
+  border-color: #AC58FA;
   background-color: transparent;
-  color: #FF5555;
+  color: #AC58FA;
 }
 
 button:active {
-  border-color: #FF5555;
-  background-color: #ff8982;
+  border-color: #AC58FA;
+  background-color: #D0A9F5;
   color: black;
 }
 

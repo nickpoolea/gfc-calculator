@@ -21,7 +21,7 @@ public class calculatorController {
 									@RequestParam("left")  double intOne, 
 									@RequestParam("right") double intTwo) {
 		
-		ModelAndView mv = new ModelAndView("/results");
+		ModelAndView mv = new ModelAndView("/index");
 		double result = 0;
 		
 		switch(selection) {
@@ -47,7 +47,7 @@ public class calculatorController {
 	
 	@GetMapping("calc")
 	public String get() {
-		return "/results";
+		return "/index";
 	}
 
 }

@@ -2,10 +2,17 @@
 <html>
 	<head>
 		<title>Calculator</title>
-		 <link rel="stylesheet" href="/site.css">
+		<link rel="stylesheet" href="/site.css">
 	</head>
 	<body>
-	<h1>Welcome to the Calculator</h1>
-	{{> calculate-form }}
+		<h1>Calculator</h1>
+		<b>
+			Result: {{#result}}
+							{{.}}
+							{{/result}}
+		</b>
+		
+			{{> calculate-form }}
+
 	</body>
 </html>
